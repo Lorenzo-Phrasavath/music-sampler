@@ -1,0 +1,123 @@
+body{
+  font-family: sans-serif;
+  margin: auto;
+  padding: 1rem;
+  max-width: 600px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+h1 {
+  font-family: 'Mountains of Christmas', cursive;
+  text-align: center;
+  font-size: 3rem;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+#attribution {
+  font-size: 0.75rem;
+}
+audio {
+  display: block;
+  margin: auto;
+  padding: 0;
+  /*width: 1fr;*/
+}
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  padding-top: 2rem;
+}
+
+.beetlejuice {
+  display: none;
+}
+.batman {
+  display: none;
+}
+.scissorhands {
+  display: none;
+}
+.nightmare {
+  display: none;
+}
+
+#learn-more {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*#top-grid {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 600px 600px;
+  grid-template rows: auto;
+}*/
+
+#grid {
+  display: grid;
+  max-width: 600px;
+  margin: auto;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+  "display display display display"
+  "name name name name"
+  "player player player player"
+  "beetlejuice batman scissorhands nightmare"
+
+  /*display: grid;
+  max-width: 800px;
+  margin: auto;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+  "display display display display beetlejuice"
+  "display display display display batman"
+  "display display display display scissorhands"
+  "display display display display nightmare"
+  "name name name player player"*/
+
+
+
+  /*"display display display beetlejuice"
+  "display display disply batman"
+  "player player player scissorhands"
+  "name name name nightmare";*/
+}
+
+#display {
+  grid-area: display;
+  margin: 0;
+}
+#player {
+  grid-area: player;
+  padding-bottom: 1rem;
+}
+#name {
+  grid-area: name;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+}
+#beetlejuice-cover {
+  grid-area: beetlejuice;
+}
+#batman-cover {
+  grid-area: batman;
+}
+#scissorhands-cover {
+  grid-area: scissorhands;
+}
+#nightmare-cover {
+  grid-area: nightmare;
+}
+
+a {
+  color: #fff;
+}
